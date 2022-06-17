@@ -83,8 +83,7 @@ int game_show(){
   win3=newwin(8,20,20,73); //target board
   wbkgd(win3,COLOR_PAIR(7));
   wattron(win3,COLOR_PAIR(7));
-  // wbkgd(win2,COLOR_PAIR(1));
-  // wattron(win2,COLOR_PAIR(1));
+
   wborder(win3,'*','*','*','*','*','*','*','*');
   mvwprintw(win3,1,5,"Mission");
   mvwprintw(win3,2,2,"B : %d",target_score[stage][0]);
@@ -95,6 +94,7 @@ int game_show(){
 
   return 0;
 }
+
 int main(){
     start();
     while (fail==false)

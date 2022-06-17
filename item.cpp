@@ -9,7 +9,7 @@ void growing() {
         g_itemy = (rand() % 18) + 1;
 
         if (map[stage][g_itemy][g_itemx] != 0) {
-            food_crush_on = 1; //on
+            food_crush_on = 1;
             r++;
         }
         if (food_crush_on == 1) continue;
