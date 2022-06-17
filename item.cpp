@@ -20,7 +20,7 @@ void growing() {
 
 }
 
-void posion() {
+void poison() {
     int r = 3;
     int food_crush_on = 0;
     while (1) {

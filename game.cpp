@@ -372,7 +372,7 @@ int snake(){
         map[stage][snakey[i]][snakex[i]] = 4;
     }
     if(poisoned == 1){
-        posion();
+        poison();
         p_timer = 100;
     }
     if(grown == 1){
@@ -400,7 +400,7 @@ int timer(){
     }
     if(p_timer == 0){
         map[stage][p_itemy][p_itemx] = 0;
-        posion();
+        poison();
         p_timer = 100;
     }
     if(movetimer == 0){
@@ -471,7 +471,7 @@ int setstage(int n){
 
     gate();
     growing();
-    posion();
+    poison();
 
     return 0;
 }
